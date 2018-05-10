@@ -87,7 +87,7 @@ ziggy-react-app/
 This react-app boilerplate is open source. Any feedback, issues, contributions, and requests are appreciated and encouraged.  
 
 For more information:  
-[Contributing Instructions](https://github.com/ziggysauce/ziggy-react-app/blob/master/CONTRIBUTING)  
+[Contributing Instructions](https://github.com/ziggysauce/ziggy-react-app/blob/master/CONTRIBUTING.md)  
 [License](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)  
 
 If you found this repository helpful, please give me a follow and star this repository. Thanks for all the support!
