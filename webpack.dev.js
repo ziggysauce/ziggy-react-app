@@ -1,5 +1,5 @@
 const merge = require('webpack-merge');
-const webpack = require('webpack')
+const webpack = require('webpack');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -8,8 +8,8 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
   },
   plugins: [
@@ -19,5 +19,5 @@ module.exports = merge(common, {
   devServer: {
     contentBase: './src',
     hot: true,
-  }
+  },
 });

@@ -9,18 +9,19 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract(
-          {
-            fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader']
-          })
-      }
-    ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
+      },
+    ],
   },
   plugins: [
-    new ExtractTextPlugin(
-      { filename: 'style.[hash].css', disable: false, allChunks: true }
-    ),
+    new ExtractTextPlugin({
+      filename: 'style.[hash].css',
+      disable: false,
+      allChunks: true,
+    }),
     new UglifyJSPlugin({
       sourceMap: true,
     }),

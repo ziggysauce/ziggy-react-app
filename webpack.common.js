@@ -7,26 +7,24 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     publicPath: '',
-    filename: '[name].[hash].js'
+    filename: '[name].[hash].js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        },
+        use: ['babel-loader', 'eslint-loader'],
       },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin('dist', {} ),
+    new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
       inject: false,
       hash: false,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
     }),
   ],
 };
