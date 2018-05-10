@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component testing App component renders with h1 text and Credit component 1`] = `
+<div
+  className="app-container"
+>
+  <h1>
+    React App Boilerplate
+  </h1>
+  <div
+    style={
+      Object {
+        "boxShadow": "0px 0px 10px 2px lightgrey",
+        "display": "flex",
+        "flexDirection": "column",
+        "fontFamily": "sans-serif",
+        "padding": "30px",
+      }
+    }
+  >
+    <div>
+      <h2>
+        Instructions to get started:
+      </h2>
+      <p>
+        Delete 
+        <code
+          style={
+            Object {
+              "backgroundColor": "lightgrey",
+              "padding": "3px",
+            }
+          }
+        >
+          Credit.js
+        </code>
+         file
+      </p>
+      <p>
+        Edit 
+        <code
+          style={
+            Object {
+              "backgroundColor": "lightgrey",
+              "padding": "3px",
+            }
+          }
+        >
+          App.js
+        </code>
+         file
+      </p>
+      <p>
+        Edit 
+        <code
+          style={
+            Object {
+              "backgroundColor": "lightgrey",
+              "padding": "3px",
+            }
+          }
+        >
+          _app.scss
+        </code>
+         file
+      </p>
+    </div>
+    <div>
+      <h3>
+        Follows and stars are much appreciated!
+      </h3>
+      <iframe
+        frameBorder="0"
+        height="30px"
+        scrolling="0"
+        src="https://ghbtns.com/github-btn.html?user=ziggysauce&type=follow&count=true&size=large"
+        width="220px"
+      />
+      <iframe
+        frameBorder="0"
+        height="30px"
+        scrolling="0"
+        src="https://ghbtns.com/github-btn.html?user=ziggysauce&repo=ziggy-react-app&type=star&count=true&size=large"
+        width="160px"
+      />
+    </div>
+  </div>
+</div>
+`;

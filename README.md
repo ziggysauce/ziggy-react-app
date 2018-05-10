@@ -1,5 +1,5 @@
-# Ziggy React App Boilerplate
-Simple setup for frontend react applications
+# Ziggy Fullstack React App Boilerplate
+Simple setup for fullstack react/express/node applications
 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)  
@@ -46,26 +46,35 @@ Simple setup for frontend react applications
   * Production Build
     * Separate injected stylesheet ([Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin))
     * JS Compression/Minification ([Uglify JS Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin))
-* [Babel](http://babeljs.io/) 
+* [Babel](http://babeljs.io/)  
 * [SASS](https://sass-lang.com/)  
+* [Express](https://expressjs.com/)  
+* [Jest](https://facebook.github.io/jest/)  
 
 ```
 ziggy-react-app/
-├── dist/
-├── src/
-│    ├── components/
-│    │    ├── App.js
-│    │    └── Credit.js
-│    ├── styles/
+├── client/
+│    ├── dist/
+│    ├── src/
+│    │    ├── __tests__
+│    │    │    ├── __snapshots__
+│    │    │    └── app.test.js
 │    │    ├── components/
-│    │    │    └── _app.scss
-│    │    ├── setup/
-│    │    │    ├── _base.scss
-│    │    │    └── _variables.scss
-│    │    └── main.scss
-│    ├── index.html
-│    └── index.js
+│    │    │    ├── App.js
+│    │    │    └── Credit.js
+│    │    ├── styles/
+│    │    │    ├── components/
+│    │    │    │    └── _app.scss
+│    │    │    ├── setup/
+│    │    │    │    ├── _base.scss
+│    │    │    │    └── _variables.scss
+│    │    │    └── main.scss
+│    │    ├── index.html
+│    │    └── index.js
+├── server/
+│    └── server.js
 ├── .babelrc
+├── .eslintrc.js
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE
@@ -78,13 +87,21 @@ ziggy-react-app/
 
 
 ## Instructions
-* Delete the `Credit.js` file
-* Edit the `App.js` file
-* Edit the `_app.scss` file
-
+* Frontend
+  * Delete the `Credit.js` file
+  * Edit the `App.js` file
+  * Edit the `_app.scss` file
+* Backend
+  * Add a `.env` file
+    * Add the following code to your `.env` file:
+      ```
+      APP_NAME=ziggy-react-app
+      PORT=5000
+      ```
+    * Edits here require changes throughout the app where `process.env` is called
 
 ## Contributing
-This react-app boilerplate is open source. Any feedback, issues, contributions, and requests are appreciated and encouraged.  
+This react app boilerplate is open source. Any feedback, issues, contributions, and requests are appreciated and encouraged.  
 
 For more information:  
 [Contributing Instructions](https://github.com/ziggysauce/ziggy-react-app/blob/master/CONTRIBUTING.md)  
