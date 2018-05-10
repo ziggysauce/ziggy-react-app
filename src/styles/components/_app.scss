@@ -1,0 +1,21 @@
+// Change code here for your `App.js` files
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  h1 {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    background-color: $off-black;
+    color: $off-white;
+    box-shadow: 0px 0px 10px 2px lighten($off-black, 50%);
+  }
+}
