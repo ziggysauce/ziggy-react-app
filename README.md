@@ -3,7 +3,7 @@ Simple setup for frontend react applications
 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)  
-[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE.md)  
+[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)  
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Starting%20a%20new%20react%20app%20using%20ziggy-react-app!&url=https://github.com/ziggysauce/ziggy-react-app&via=ziggysauce&hashtags=react,boilerplate,webpack,babel,sass)  
 
 
