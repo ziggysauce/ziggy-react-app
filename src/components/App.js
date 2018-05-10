@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Test from './components/Test';
+import Credit from './Credit';
 
 class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <h1>React app boilerplate</h1>
-        <Test />
+        <h1>React App Boilerplate</h1>
+        <Credit />
       </div>
     );
   }
