@@ -20,6 +20,7 @@
   "scripts": {
     "prestart": "npm run build:prod",
     "start": "node server/server.js",
+    "serve": "nodemon server/server.js",
     "test": "jest --i",
     "test:verbose": "jest -i --verbose",
     "test:coverage": "jest -i --coverage",
@@ -59,6 +60,7 @@
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
     "node-sass": "^4.9.0",
+    "nodemon": "^1.17.4",
     "react-test-renderer": "^16.3.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",

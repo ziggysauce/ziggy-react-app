@@ -120,7 +120,8 @@ ziggy-react-app/                           # application root directory
 | npm <script>   |                     Function/Description                              |
 | -------------- | --------------------------------------------------------------------- |
 | prestart       | Run webpack production build script before express server             |
-| start          | Starts app on express server at `localhost:5000`                      |
+| start          | Starts app on express server at `localhost:5000` with node            |
+| serve          | Starts app on express server at `localhost:5000` with nodemon         |
 | test           | Runs all tests files (`.test.js` type)                                |
 | test:verbose   | Displays individuals test results                                     |
 | test:coverage  | Collects test coverage information and reports output                 |
