@@ -2,9 +2,11 @@
 Simple setup for fullstack react/express/node applications
 
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)  
-[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)  
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Starting%20a%20new%20react%20app%20using%20ziggy-react-app!&url=https://github.com/ziggysauce/ziggy-react-app&via=ziggysauce&hashtags=react,boilerplate,webpack,babel,sass)  
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)
+[![node](https://img.shields.io/badge/node-v9.4.0-brightgreen.svg)](https://nodejs.org/en/)
+[![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/)
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Starting%20a%20new%20react%20app%20using%20ziggy-react-app!&url=https://github.com/ziggysauce/ziggy-react-app&via=ziggysauce&hashtags=react,boilerplate,webpack,babel,sass)
 
 
 ## Table of Contents
@@ -25,7 +27,7 @@ Simple setup for fullstack react/express/node applications
 
 ### Production
 * Run `npm run build` for production build
-* Run `open dist/index.html` to see application in browser
+* Run `npm start`
 
 
 ## Requirements
@@ -49,6 +51,12 @@ Simple setup for fullstack react/express/node applications
 * [Babel](http://babeljs.io/)  
 * [SASS](https://sass-lang.com/)  
 * [Express](https://expressjs.com/)  
+  * Middleware
+    * [Body Parser](https://github.com/expressjs/body-parser)
+    * [Cookie Parser](https://github.com/expressjs/cookie-parser) 
+    * [Helmet](https://github.com/helmetjs/helmet)  
+    * [Express Sessions](https://github.com/expressjs/session)  
+    * [CORS](https://github.com/expressjs/cors)   
 * [Jest](https://facebook.github.io/jest/)  
 
 ```
@@ -92,13 +100,19 @@ ziggy-react-app/
   * Edit the `App.js` file
   * Edit the `_app.scss` file
 * Backend
-  * Add a `.env` file
+  * Add a `.env` file to the root of your directory
     * Add the following code to your `.env` file:
       ```
       APP_NAME=ziggy-react-app
       PORT=5000
+      SESSION_SECRET=ziggy-session
       ```
-    * Edits here require changes throughout the app where `process.env` is called
+    * Removing a variable from here may require changes throughout the app where `process.env` is called
+* Testing
+  * Run `npm test` to start all jest testing
+  * Run `npm run test:verbose` to see jest testing details
+  * Run `npm run test:coverage` to create coverage directory
+    * Run `open coverage/lcov-report/index.html` to see jest testing coverage
 
 ## Contributing
 This react app boilerplate is open source. Any feedback, issues, contributions, and requests are appreciated and encouraged.  
