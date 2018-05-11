@@ -5,7 +5,7 @@ Simple boilerplate setup for fullstack react/express/node applications
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)
 [![node](https://img.shields.io/badge/node-v10.1.0-brightgreen.svg)](https://nodejs.org/en/)
-[![npm](https://img.shields.io/badge/npm-v6.0.1-blue.svg)](https://www.npmjs.com/)
+[![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Starting%20a%20new%20react%20app%20using%20ziggy-react-app!&url=https://github.com/ziggysauce/ziggy-react-app&via=ziggysauce&hashtags=react,boilerplate,webpack,babel,sass)
 
 
