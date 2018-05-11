@@ -11,5 +11,5 @@ app.use(middleware);
 app.use(express.static(publicPath));
 
 app.listen(PORT, () => {
-  console.log(`${process.env.APP_NAME} running on PORT: ${PORT}`);
+  console.log(`ziggy-react-app running on PORT: ${PORT}`);
 });

@@ -17,17 +17,35 @@ Simple setup for fullstack react/express/node applications
 * [Contributing](#contributing)
 
 ## Quick Start
-* Clone or download this repository
-* In your terminal, navigate to the root directory
-* Run `npm install` to install dependencies
+* Clone or download this repository  
+  ```
+  git clone https://github.com/ziggysauce/ziggy-react-app.git
+  ```  
+* In your terminal, navigate to the root directory  
+  ```
+  cd ziggy-react-app
+  ```  
+* Install dependencies  
+  ```
+  npm install
+  ```
 
 ### Development
-* Run `npm run build:dev` for development build
+* Run script for development build:  
+  ```
+  npm run build:dev
+  ```  
 * In browser, application is served at `http://localhost:8080`
 
 ### Production
-* Run `npm run build:prod` for production build
-* Run `npm start`
+* Run script for production build:  
+  ```
+  npm run build:prod
+  ```  
+* Run script to start up app:  
+  ```
+  npm start
+  ```  
 
 
 ## Requirements
@@ -58,6 +76,7 @@ Simple setup for fullstack react/express/node applications
     * [Express Sessions](https://github.com/expressjs/session)  
     * [CORS](https://github.com/expressjs/cors)   
 * [Jest](https://facebook.github.io/jest/)  
+* [ESLint](https://eslint.org/) (AirBnB Rules)
 
 ```
 ziggy-react-app/
@@ -103,11 +122,10 @@ ziggy-react-app/
   * Add a `.env` file to the root of your directory
     * Add the following code to your `.env` file:
       ```
-      APP_NAME=ziggy-react-app
       PORT=5000
       SESSION_SECRET=ziggy-session
       ```
-    * Edit .env variables however you seem fit
+    * Edit .env variables however you see fit
     * Removing a variable from here may require changes throughout the app where `process.env` is called
 * Testing
   * Run `npm test` to start all jest testing
