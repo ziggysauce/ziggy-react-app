@@ -1,5 +1,5 @@
-# Ziggy Fullstack React App Boilerplate
-Simple setup for fullstack react/express/node applications
+# Ziggy React App  
+Simple boilerplate setup for fullstack react/express/node applications
 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
@@ -49,8 +49,8 @@ Simple setup for fullstack react/express/node applications
 
 
 ## Requirements
-* [Node](https://nodejs.org/en/)
-* [NPM](https://www.npmjs.com/)
+* [Node](https://nodejs.org/en/) (v9+)
+* [NPM](https://www.npmjs.com/) (v5+)
 
 
 ## What's Included?
@@ -78,39 +78,49 @@ Simple setup for fullstack react/express/node applications
 * [Jest](https://facebook.github.io/jest/)  
 * [ESLint](https://eslint.org/) (AirBnB Rules)
 
+### Directory Structure
 ```
-ziggy-react-app/
-├── client/
-│    ├── dist/
-│    ├── src/
-│    │    ├── __tests__
-│    │    │    ├── __snapshots__
-│    │    │    └── app.test.js
-│    │    ├── components/
-│    │    │    ├── App.js
-│    │    │    └── Credit.js
-│    │    ├── styles/
-│    │    │    ├── components/
-│    │    │    │    └── _app.scss
-│    │    │    ├── setup/
-│    │    │    │    ├── _base.scss
-│    │    │    │    └── _variables.scss
-│    │    │    └── main.scss
-│    │    ├── index.html
-│    │    └── index.js
-├── server/
-│    └── server.js
-├── .babelrc
-├── .eslintrc.js
-├── .gitignore
-├── CONTRIBUTING.md
-├── LICENSE
-├── package.json
-├── README.md
-├── webpack.common.js
-├── webpack.dev.js
-└── webpack.prod.js
+ziggy-react-app/                              # root directory
+├── client/                                   # frontend directory
+│    ├── dist/                                # production code directory ignored by .gitignore file
+│    ├── src/                                 # development code directory
+│    │    ├── __tests__                       # jest testing directory
+│    │    │    ├── __snapshots__/             # jest snapshots directory
+│    │    │    └── app.test.js                # initial test file
+│    │    ├── components/                     # react components directory
+│    │    │    ├── App.js                     # initial App.js file
+│    │    │    └── Credit.js                  # author information; delete file after opening
+│    │    ├── styles/                         # sass styles directory
+│    │    │    ├── components/                # sass components directory
+│    │    │    │    └── _app.scss             # initial styling for app component
+│    │    │    ├── setup/                     # sass setup directory
+│    │    │    │    ├── _base.scss            # base styling
+│    │    │    │    └── _variables.scss       # sass variables
+│    │    │    └── main.scss                  # root sass file (import other files here)
+│    │    ├── index.html                      # template HTML file
+│    │    └── index.js                        # application entry point
+├── server/                                   # backend directory
+│    ├── middleware/                          # server middleware directory
+│    │    ├── cors.js                         # CORS middleware
+│    │    ├── index.js                        # middleware configuration file
+│    │    └── session.js                      # express-session middleware
+│    └── server.js                            # express server entry point
+├── .babelrc                                  # babel configuration file
+├── .eslintrc.js                              # eslint configuration file
+├── webpack.common.js                         # base webpack configuration
+├── webpack.dev.js                            # development build webpack configuration
+└── webpack.prod.js                           # production build webpack configuration
 ```
+
+### Command Scripts
+| npm <script>   |                     Function/Description                              |
+| -------------- | --------------------------------------------------------------------- |
+| start          | Starts app on express server at `localhost:5000`                      |
+| test           | Runs all tests files (`.test.js` type)                                |
+| test:verbose   | Displays individuals test results                                     |
+| test:coverage  | Collects test coverage information and reports output                 |
+| build:dev      | Runs developement webpack build (HMR enabled) at `localhost:8080`     |
+| build:prod     | Runs production webpack build (`dist` directory created)              |
 
 
 ## Instructions
@@ -118,13 +128,17 @@ ziggy-react-app/
   * Delete the `Credit.js` file
   * Edit the `App.js` file
   * Edit the `_app.scss` file
+  * SASS styling:
+    * Be sure to add an underscore `_` before new `.scss` files
+    * Add new scss files to `main.scss` as an import (order matters)
 * Backend
   * Add a `.env` file to the root of your directory
     * Add the following code to your `.env` file:
       ```
       PORT=5000
-      SESSION_SECRET=ziggy-session
+      SESSION_SECRET=<your_session_secret_here>
       ```
+    * Add your own `SESSION_SECRET` value
     * Edit .env variables however you see fit
     * Removing a variable from here may require changes throughout the app where `process.env` is called
 * Testing

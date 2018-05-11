@@ -14,10 +14,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "jest --i",
     "test:verbose": "jest -i --verbose",
     "test:coverage": "jest -i --coverage",
-    "start": "node server/server.js",
     "build:dev": "webpack-dev-server --hot --watch --config webpack.dev.js",
     "build:prod": "webpack --config webpack.prod.js"
   },
