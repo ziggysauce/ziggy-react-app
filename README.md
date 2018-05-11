@@ -38,6 +38,13 @@ Simple boilerplate setup for fullstack react/express/node applications
 * In browser, application is served at `http://localhost:8080`
 
 ### Production
+* Add a `.env` file to the root of your directory
+  * Add the following code to your `.env` file:
+    ```
+    PORT=5000
+    SESSION_SECRET=<your_session_secret_here>
+    ```
+  * Add your own `SESSION_SECRET` value
 * Run script to start up app:  
   ```
   npm start
