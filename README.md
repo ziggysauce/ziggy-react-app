@@ -22,11 +22,11 @@ Simple setup for fullstack react/express/node applications
 * Run `npm install` to install dependencies
 
 ### Development
-* Run `npm start` for development build
-* In browser, application is served at `http://localhost:8080/`
+* Run `npm run build:dev` for development build
+* In browser, application is served at `http://localhost:8080`
 
 ### Production
-* Run `npm run build` for production build
+* Run `npm run build:prod` for production build
 * Run `npm start`
 
 
@@ -107,6 +107,7 @@ ziggy-react-app/
       PORT=5000
       SESSION_SECRET=ziggy-session
       ```
+    * Edit .env variables however you seem fit
     * Removing a variable from here may require changes throughout the app where `process.env` is called
 * Testing
   * Run `npm test` to start all jest testing
