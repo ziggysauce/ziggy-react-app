@@ -18,6 +18,7 @@
     "url": "git+https://github.com/ziggysauce/ziggy-react-app.git"
   },
   "scripts": {
+    "prestart": "npm run build:prod",
     "start": "node server/server.js",
     "test": "jest --i",
     "test:verbose": "jest -i --verbose",

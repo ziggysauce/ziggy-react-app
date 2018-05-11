@@ -38,14 +38,11 @@ Simple boilerplate setup for fullstack react/express/node applications
 * In browser, application is served at `http://localhost:8080`
 
 ### Production
-* Run script for production build:  
-  ```
-  npm run build:prod
-  ```  
 * Run script to start up app:  
   ```
   npm start
   ```  
+* `prestart` script will run and create `dist` directory with production build
 
 
 ## Requirements
@@ -115,12 +112,13 @@ ziggy-react-app/                           # application root directory
 ### Command Scripts
 | npm <script>   |                     Function/Description                              |
 | -------------- | --------------------------------------------------------------------- |
+| prestart       | Run webpack production build script before express server             |
 | start          | Starts app on express server at `localhost:5000`                      |
 | test           | Runs all tests files (`.test.js` type)                                |
 | test:verbose   | Displays individuals test results                                     |
 | test:coverage  | Collects test coverage information and reports output                 |
-| build:dev      | Runs developement webpack build (HMR enabled) at `localhost:8080`     |
-| build:prod     | Runs production webpack build (`dist` directory created)              |
+| build:dev      | Runs webpack developement build (HMR enabled) at `localhost:8080`     |
+| build:prod     | Runs webpack production build (`dist` directory created)              |
 
 
 ## Instructions
