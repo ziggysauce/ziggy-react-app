@@ -4,7 +4,7 @@ Simple boilerplate setup for fullstack react/express/node applications
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)
-[![node](https://img.shields.io/badge/node-v9.4.0-brightgreen.svg)](https://nodejs.org/en/)
+[![node](https://img.shields.io/badge/node-v10.1.0-brightgreen.svg)](https://nodejs.org/en/)
 [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Starting%20a%20new%20react%20app%20using%20ziggy-react-app!&url=https://github.com/ziggysauce/ziggy-react-app&via=ziggysauce&hashtags=react,boilerplate,webpack,babel,sass)
 
@@ -80,36 +80,36 @@ Simple boilerplate setup for fullstack react/express/node applications
 
 ### Directory Structure
 ```
-ziggy-react-app/                              # root directory
-├── client/                                   # frontend directory
-│    ├── dist/                                # production code directory ignored by .gitignore file
-│    ├── src/                                 # development code directory
-│    │    ├── __tests__                       # jest testing directory
-│    │    │    ├── __snapshots__/             # jest snapshots directory
-│    │    │    └── app.test.js                # initial test file
-│    │    ├── components/                     # react components directory
-│    │    │    ├── App.js                     # initial App.js file
-│    │    │    └── Credit.js                  # author information; delete file after opening
-│    │    ├── styles/                         # sass styles directory
-│    │    │    ├── components/                # sass components directory
-│    │    │    │    └── _app.scss             # initial styling for app component
-│    │    │    ├── setup/                     # sass setup directory
-│    │    │    │    ├── _base.scss            # base styling
-│    │    │    │    └── _variables.scss       # sass variables
-│    │    │    └── main.scss                  # root sass file (import other files here)
-│    │    ├── index.html                      # template HTML file
-│    │    └── index.js                        # application entry point
-├── server/                                   # backend directory
-│    ├── middleware/                          # server middleware directory
-│    │    ├── cors.js                         # CORS middleware
-│    │    ├── index.js                        # middleware configuration file
-│    │    └── session.js                      # express-session middleware
-│    └── server.js                            # express server entry point
-├── .babelrc                                  # babel configuration file
-├── .eslintrc.js                              # eslint configuration file
-├── webpack.common.js                         # base webpack configuration
-├── webpack.dev.js                            # development build webpack configuration
-└── webpack.prod.js                           # production build webpack configuration
+ziggy-react-app/                           # application root directory
+├── client/                                # frontend directory
+│    ├── dist/                             # production code directory ignored by .gitignore file
+│    ├── src/                              # development code directory
+│    │    ├── __tests__                    # jest testing directory
+│    │    │    ├── __snapshots__/          # jest snapshots directory (created after running tests)
+│    │    │    └── app.test.js             # initial test file
+│    │    ├── components/                  # react components directory
+│    │    │    ├── App.js                  # initial App.js file
+│    │    │    └── Credit.js               # author information; delete file after opening
+│    │    ├── styles/                      # sass styles directory
+│    │    │    ├── components/             # sass components directory
+│    │    │    │    └── _app.scss          # initial styling for app component
+│    │    │    ├── setup/                  # sass setup directory
+│    │    │    │    ├── _base.scss         # base styling
+│    │    │    │    └── _variables.scss    # sass variables
+│    │    │    └── main.scss               # root sass file (import other files here)
+│    │    ├── index.html                   # template HTML file
+│    │    └── index.js                     # application entry point
+├── server/                                # backend directory
+│    ├── middleware/                       # server middleware directory
+│    │    ├── cors.js                      # CORS middleware
+│    │    ├── index.js                     # middleware configuration file
+│    │    └── session.js                   # express-session middleware
+│    └── server.js                         # express server entry point
+├── .babelrc                               # babel configuration file
+├── .eslintrc.js                           # eslint configuration file
+├── webpack.common.js                      # base webpack configuration
+├── webpack.dev.js                         # development build webpack configuration
+└── webpack.prod.js                        # production build webpack configuration
 ```
 
 ### Command Scripts

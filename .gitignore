@@ -59,5 +59,3 @@ typings/
 
 # production dist directory
 dist
-
-package-lock.json
