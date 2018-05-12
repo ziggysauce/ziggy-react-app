@@ -9,7 +9,7 @@ For any specific questions or suggestions, feel free to create a new issue with 
 3. In the command line terminal, navigate to the root directory of your local clone.
 4. Run `npm install` to install all the development dependencies of this project.
 5. Make changes to your code.
-6. Commit and push all files to your forked repositroy.
+6. Commit and push all files to your forked repository.
 
 
 ## Making a Pull Request
